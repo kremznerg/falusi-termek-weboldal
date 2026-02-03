@@ -22,5 +22,5 @@ Ez a projekt a tengelici **Falusi Termék Kft.** családi gazdaság hivatalos we
 
 ---
 
-**Weboldal:** [falusitermek.hu](https://falusitermek.hu)
+**Weboldal:** kremznerg.github.io/falusi-termek-weboldal/
 **Készítette:** Kremzner Gábor
