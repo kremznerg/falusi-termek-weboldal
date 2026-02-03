@@ -28,10 +28,10 @@ form.addEventListener("submit", async function (e) {
 
     if (message.value.trim() === "") {
         errors.push("Az üzenet nem lehet üres.");
+    } const captchaResponse = grecaptcha.getResponse();
+    if (captchaResponse.length === 0) {
+        errors.push("Kérjük, igazolja, hogy nem Ön egy robot!");
     }
-
-
-
     if (errors.length > 0) {
         alertBox.innerHTML = `
             <div class="alert alert-danger fade show border-0 rounded-4 shadow-sm">
@@ -62,6 +62,7 @@ form.addEventListener("submit", async function (e) {
                     </div>
                 `;
                 form.reset();
+                grecaptcha.reset();
             } else {
                 const data = await response.json();
                 alertBox.innerHTML = `
