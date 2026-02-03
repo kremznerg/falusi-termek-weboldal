@@ -51,7 +51,7 @@
 
         .category-scroll {
             position: sticky;
-            top: 70px;
+            top: 117px;
             z-index: 100;
             background: white;
             padding: 1rem 0;
@@ -64,8 +64,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="assets/images/logo-removebg.png" alt="Falusi Termék" height="80" class="me-3" />
@@ -282,7 +282,7 @@
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 const element = document.querySelector(targetId);
-                const offset = 130;
+                const offset = 180;
                 const bodyRect = document.body.getBoundingClientRect().top;
                 const elementRect = element.getBoundingClientRect().top;
                 const elementPosition = elementRect - bodyRect;
