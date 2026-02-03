@@ -59,7 +59,8 @@
         }
     </style>
 
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/images/logo-removebg.png">
+    <link rel="shortcut icon" href="assets/images/logo-removebg.png">
 </head>
 
 <body>
@@ -67,8 +68,13 @@
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="assets/images/favicon.ico" alt="logo" height="40" class="me-2">
-                    Falusi Termék Kft.
+                    <img src="assets/images/logo-removebg.png" alt="Falusi Termék" height="80" class="me-3" />
+                    <div class="d-none d-md-block border-start ps-3">
+                        <div class="fw-bold" style="color: #1a4332; font-size: 1.2rem; line-height: 1;">Falusi Termék
+                        </div>
+                        <div class="small text-muted"
+                            style="font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase;">Prémium Háztáji Baromfi</div>
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
                     aria-controls="mainNav" aria-expanded="false">
@@ -81,6 +87,7 @@
                         <li class="nav-item"><a class="nav-link active" href="products.html">Termékek</a></li>
                         <li class="nav-item"><a class="nav-link" href="news.html">Hírek</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Rólunk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html#contact">Kapcsolat</a></li>
                     </ul>
                 </div>
             </div>
@@ -215,10 +222,18 @@
             </div>
 
             <div class="text-center mt-5 pt-5">
-                <div class="card bg-warning bg-opacity-10 border-0 p-5 rounded-5">
-                    <h4 class="fw-bold mb-3">Vásárlási információk</h4>
-                    <p class="mb-4">Minden termékünk konyhakész, előhűtött állapotban érkezik.</p>
-                    <p class="h5 fw-bold mb-0">📞 Rendelésfelvétel: +36 20 214 8570</p>
+                <div class="card bg-warning bg-opacity-10 border-0 p-4 p-md-5 rounded-5" data-aos="zoom-in">
+                    <h4 class="fw-bold mb-3">Rendelés és Tájékoztatás</h4>
+                    <p class="lead mb-4">Mivel családi gazdaságunkban a személyes kapcsolat a legfontosabb, a
+                        rendelésfelvétel alapvetően <strong>telefonon keresztül</strong> történik.</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+                        <a href="tel:+36202148570"
+                            class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-bold shadow-sm">
+                            📞 Hívás: +36 20 214 8570
+                        </a>
+                    </div>
+                    <p class="mt-4 text-muted small">Keressen minket bizalommal kérdéseivel a vágásokkal és átvétellel
+                        kapcsolatban!</p>
                 </div>
             </div>
 
@@ -228,17 +243,18 @@
     <footer class="text-white text-center">
         <div class="container">
             <div class="mb-4">
-                <img src="assets/images/favicon.ico" alt="logo" height="60" class="mb-3" />
-                <h3 class="fw-bold">Falusi Termék Kft</h3>
+                <div class="bg-white d-inline-block p-3 rounded-circle shadow-sm mb-3">
+                    <img src="assets/images/logo-removebg.png" alt="Falusi Termék Kft." height="80" />
+                </div>
                 <p>Családi gazdaságunk büszkeségei közvetlenül az Ön asztalára.</p>
             </div>
             <div class="row justify-content-center mb-4 g-4">
-                <div class="col-auto">📞 +36 20 214 8570</div>
+                <div class="col-auto"><a href="tel:+36202148570" class="text-white text-decoration-none">📞 +36 20 214 8570</a></div>
                 <div class="col-auto">📍 Tengelic</div>
                 <div class="col-auto">
                     <a href="https://www.facebook.com/p/Falusi-Term%C3%A9k-%C3%81llatteny%C3%A9szt%C5%91-Kereskedelmi-%C3%A9s-Szolg%C3%A1ltat%C3%B3-Kft-100068120409514/"
                         class="text-white text-decoration-none" target="_blank">
-                        🔵 Facebook-oldalunk
+                        🔵 Facebook
                     </a>
                 </div>
             </div>

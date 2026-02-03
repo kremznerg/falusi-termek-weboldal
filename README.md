@@ -1,43 +1,26 @@
-# Falusi Termék Kft - Weboldal
+# Falusi Termék Kft. - Hivatalos Weboldal
 
-Ez a weboldal a **Falusi Termék Kft** (Tengelic) családi gazdaság hivatalos bemutatkozó oldala. A projekt célja, hogy modern, reszponzív és bizalomgerjesztő felületet biztosítson a háztáji baromfi termékek bemutatásához és az előrendelések segítéséhez.
+Ez a projekt a tengelici **Falusi Termék Kft.** családi gazdaság hivatalos weboldala. A weboldal célja a háztáji, prémium minőségű baromfitermékek bemutatása, a gazdaság értékeinek közvetítése és a vásárlók tájékoztatása a rendelési lehetőségekről.
 
-## 🌟 Jellemzők
+## Főbb jellemzők
 
-- **Modern Design**: Organikus színek, letisztult tipográfia (Outfit font) és prémium megjelenés.
-- **Reszponzív felépítés**: Tökéletesen működik mobilon, tableten és asztali gépen is (Bootstrap 5).
-- **Interaktív elemek**:
-  - Dinamikus terméklista (JSON alapú, kereshető és szűrhető).
-  - Animate On Scroll (AOS) effektek a prémium élményért.
-  - Kapcsolati űrlap validációval.
-- **SEO optimalizált**: Megfelelő meta tag-ek és szemantikus HTML szerkezet.
+- **Prémium megjelenés**: A gazdaság értékeihez illeszkedő modern, letisztult design.
+- **Teljesen reszponzív**: Optimális élmény minden eszközön (mobil, tablet, desktop).
+- **Átlátható árlista**: Logikusan felépített, kategóriákba sorolt termékkínálat árakkal és súlyadatokkal.
+- **Ügyfélközpontúság**: Közvetlen hívásindítás mobilon és validált kapcsolati űrlap.
+- **Interaktív galéria**: Pillantson be a gazdaság mindennapjaiba a beépített galérián keresztül.
+- **Gyorsaság**: Minimális betöltési idő a tiszta technológiai stacknek köszönhetően.
 
-## 🛠️ Technológiai stack
+## Technikai részletek
 
-- **Frontend**: HTML5, CSS3 (Vanilla CSS), JavaScript (ES Modules)
-- **Frameworks/Libraries**:
-  - [Bootstrap 5](https://getbootstrap.com/) - Layout és komponensek
-  - [AOS](https://michalsnik.github.io/aos/) - Animációk
-  - [Google Fonts](https://fonts.google.com/) - Outfit betűtípus
-- **Adatkezelés**: Statikus JSON fájlok a termékadatokhoz.
-
-## 🚀 Telepítés és Futtatás
-
-Mivel az oldal tiszta kliensoldali (frontend) technológiákat használ, futtatásához nincs szükség szerverre.
-
-1. Klónozd a tárolót:
-   ```bash
-   git clone https://github.com/FELHASZNALONEV/REPROZITORIUM-NEVE.git
-   ```
-2. Nyisd meg az `index.html` fájlt bármilyen böngészőben.
-
-## 📦 Publikálás (GitHub Pages)
-
-Az oldal könnyen élesíthető GitHub Pages segítségével:
-1. Töltsd fel a kódot a GitHub-ra.
-2. Menj a **Settings** -> **Pages** menüpontba.
-3. A **Build and deployment** résznél válaszd ki a `main` ágat.
-4. Mentés után az oldal pár percen belül elérhető lesz a megadott URL-en.
+- **Alaprendszer**: HTML5, CSS3, JavaScript.
+- **Keretrendszerek és könyvtárak**:
+  - [Bootstrap 5](https://getbootstrap.com/) - Modern rácsrendszer és komponensek.
+  - [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) - Dinamikus vizuális effektek.
+  - [Google Fonts](https://fonts.google.com/) - Outfit betűtípus.
+- **Form kezelés**: [Formspree](https://formspree.io/) integráció a megbízható levélküldéshez.
 
 ---
-Készítette: Kremzner Gábor
+
+**Weboldal:** [falusitermek.hu](https://falusitermek.hu)
+**Készítette:** Kremzner Gábor

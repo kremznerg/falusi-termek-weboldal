@@ -8,7 +8,6 @@ form.addEventListener("submit", async function (e) {
     const email = document.getElementById("email");
     const product = document.getElementById("productType");
     const message = document.getElementById("message");
-    const gdpr = document.getElementById("gdpr");
     const submitBtn = form.querySelector('button[type="submit"]');
 
     let errors = [];
@@ -23,17 +22,15 @@ form.addEventListener("submit", async function (e) {
         errors.push("Hibás e-mail formátum.");
     }
 
-    if (product.value === "") {
-        errors.push("Válassza ki az érdeklődés tárgyát.");
+    if (product.value.trim() === "") {
+        errors.push("Az érdeklődés tárgyának megadása kötelező.");
     }
 
     if (message.value.trim() === "") {
         errors.push("Az üzenet nem lehet üres.");
     }
 
-    if (!gdpr.checked) {
-        errors.push("El kell fogadni az adatkezelési tájékoztatót.");
-    }
+
 
     if (errors.length > 0) {
         alertBox.innerHTML = `
