@@ -2,6 +2,8 @@
 
 Ez a projekt a tengelici **Falusi Termék Kft.** családi gazdaság hivatalos weboldala. A weboldal célja a háztáji, prémium minőségű baromfitermékek bemutatása, a gazdaság értékeinek közvetítése és a vásárlók tájékoztatása a rendelési lehetőségekről.
 
+https://kremznerg.github.io/falusi-termek-weboldal/
+
 ## Főbb jellemzők
 
 - **Prémium megjelenés**: A gazdaság értékeihez illeszkedő modern, letisztult design.
@@ -21,7 +23,5 @@ Ez a projekt a tengelici **Falusi Termék Kft.** családi gazdaság hivatalos we
 - **Form kezelés**: [Formspree](https://formspree.io/) integráció a megbízható levélküldéshez.
 
 ---
-
-**Weboldal:** [kremznerg.github.io/falusi-termek-weboldal/](https://kremznerg.github.io/falusi-termek-weboldal/)
 
 **Készítette:** Kremzner Gábor
