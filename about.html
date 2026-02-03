@@ -25,7 +25,7 @@
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="assets/images/favicon.ico" alt="logo" height="40" class="me-2">
-                    Falusi Termék
+                    Falusi Termék Kft.
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
                     aria-controls="mainNav" aria-expanded="false">
@@ -36,6 +36,7 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Galéria</a></li>
                         <li class="nav-item"><a class="nav-link" href="products.html">Termékek</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">Hírek</a></li>
                         <li class="nav-item"><a class="nav-link active" href="about.html">Rólunk</a></li>
                     </ul>
                 </div>
@@ -47,7 +48,7 @@
         <section class="py-5 bg-light">
             <div class="container text-center" data-aos="fade-down">
                 <h1 class="display-4 fw-bold">Történetünk</h1>
-                <p class="lead">Falusi, háztáji baromfitartás - minőség, bizalom és frissesség generációk óta.</p>
+                <p class="lead">Falusi, háztáji baromfitartás - minőség, bizalom és frissesség évtizedek óta.</p>
             </div>
         </section>
 
@@ -57,14 +58,20 @@
                     <div class="col-md-6" data-aos="fade-right">
                         <h2 class="fw-bold mb-4">Családi gazdaság Tengelicről</h2>
                         <p class="text-muted">
-                            A Falusi Termék Kft egy családi vállalkozás, amely több évtizede foglalkozik
-                            háztáji baromfi neveléssel. Termékeinket saját előállítású takarmánnyal, tágas,
-                            levegős ólakban neveljük, gyógyszerek és antibiotikumok használata nélkül.
+                            A <strong>Falusi Termék Állattenyésztő Kereskedelmi és Szolgáltató Kft.</strong> egy
+                            tengelici családi vállalkozás,
+                            amely több évtizede foglalkozik háztáji jellegű baromfi neveléssel. Termékeinket
+                            <strong>saját receptúra alapján,
+                                helyben darált és kevert gabonán</strong>, tágas és tiszta ólakban neveljük, szigorúan
+                            <strong>gyógyszer- és antibiotikum-mentesen</strong>.
                         </p>
                         <p class="text-muted">
-                            Hiszünk abban, hogy a lassan nevelt, természetes tartású állatok adják a legjobb ízt
-                            és minőséget. Vásárlóink nagy része évek óta visszatér hozzánk - számukra ez már
-                            nem csak vásárlás, hanem bizalom és barátság.
+                            A tömegtermeléssel szemben mi a türelemben hiszünk: állatainkat <strong>8-10 hetes</strong>
+                            korukig neveljük, ami kiváló húsminőséget eredményez, amely sütés közben sem veszít
+                            számottevően a
+                            súlyából. Vásárlóink számára a nevünk egyet jelent a garantált frissességgel és a
+                            természetes
+                            minőséggel.
                         </p>
                     </div>
                     <div class="col-md-6" data-aos="fade-left">
@@ -72,7 +79,7 @@
                             <img src="assets/images/csirkek.jpg" class="img-fluid rounded-5 shadow-lg" alt="Gazdaság">
                             <div
                                 class="position-absolute bottom-0 start-0 translate-middle-x mb-5 ms-5 bg-white p-3 rounded-4 shadow d-none d-lg-block">
-                                <h5 class="fw-bold mb-0">30+ Év</h5>
+                                <h5 class="fw-bold mb-0">20+ Év</h5>
                                 <small class="text-muted">Tapasztalat</small>
                             </div>
                         </div>
@@ -100,7 +107,7 @@
                                 <li class="mb-3 d-flex align-items-center"><span class="me-2 text-primary">✔</span> Pécs
                                 </li>
                                 <li class="mb-3 d-flex align-items-center"><span class="me-2 text-primary">✔</span>
-                                    Tengelic 100 km-es körzete</li>
+                                    Tengelic 150 km-es vonzáskörzete</li>
                             </ul>
                             <div class="p-3 bg-secondary bg-opacity-10 rounded-4">
                                 <p class="mb-0 text-center">Rendelés: <strong>+36 20 214 8570</strong></p>
@@ -125,21 +132,21 @@
                 <div class="row justify-content-center mt-4">
                     <div class="col-md-8" data-aos="fade-up">
                         <div class="card p-4 p-lg-5 shadow">
-                            <form id="contactForm">
+                            <form id="contactForm" action="https://formspree.io/f/kremznerg@gmail.com" method="POST">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <label class="form-label fw-bold">Név</label>
-                                        <input type="text" id="name" class="form-control rounded-pill px-3"
+                                        <input type="text" id="name" name="name" class="form-control rounded-pill px-3"
                                             placeholder="Az Ön neve">
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label fw-bold">E-mail</label>
-                                        <input type="email" id="email" class="form-control rounded-pill px-3"
-                                            placeholder="pelda@email.com">
+                                        <input type="email" id="email" name="_replyto"
+                                            class="form-control rounded-pill px-3" placeholder="pelda@email.com">
                                     </div>
                                     <div class="col-12">
                                         <label class="form-label fw-bold">Érdeklődés tárgya</label>
-                                        <select id="productType" class="form-select rounded-pill px-3">
+                                        <select id="productType" name="subject" class="form-select rounded-pill px-3">
                                             <option value="">Válasszon...</option>
                                             <option value="fehér csirke">Fehér csirke</option>
                                             <option value="vörös csirke">Vörös csirke</option>
@@ -149,8 +156,8 @@
                                     </div>
                                     <div class="col-12">
                                         <label class="form-label fw-bold">Üzenet</label>
-                                        <textarea id="message" class="form-control rounded-4 px-3" rows="4"
-                                            placeholder="Miben segíthetünk?"></textarea>
+                                        <textarea id="message" name="message" class="form-control rounded-4 px-3"
+                                            rows="4" placeholder="Miben segíthetünk?"></textarea>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-check">
@@ -180,12 +187,18 @@
                 <h3 class="fw-bold">Falusi Termék Kft</h3>
                 <p>Családi gazdaságunk büszkeségei közvetlenül az Ön asztalára.</p>
             </div>
-            <div class="row justify-content-center mb-4">
+            <div class="row justify-content-center mb-4 g-4">
                 <div class="col-auto">📞 +36 20 214 8570</div>
-                <div class="col-auto">📍 Tengelic, Komló utca</div>
+                <div class="col-auto">📍 Tengelic</div>
+                <div class="col-auto">
+                    <a href="https://www.facebook.com/p/Falusi-Term%C3%A9k-%C3%81llatteny%C3%A9szt%C5%91-Kereskedelmi-%C3%A9s-Szolg%C3%A1ltat%C3%B3-Kft-100068120409514/"
+                        class="text-white text-decoration-none" target="_blank">
+                        🔵 Facebook-oldalunk
+                    </a>
+                </div>
             </div>
             <div class="border-top border-secondary pt-4 mt-4 opacity-50">
-                <p>&copy; 2024 Falusi Termék Kft. Minden jog fenntartva.</p>
+                <p>&copy; 2026 Falusi Termék Kft. Minden jog fenntartva.</p>
             </div>
         </div>
     </footer>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termékek - Falusi Termék Kft</title>
+    <title>Termékek és Áraink - Falusi Termék Kft</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,49 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/styles/style.css">
 
+    <style>
+        .price-list-item {
+            border-bottom: 1px dashed #dee2e6;
+            transition: all 0.3s ease;
+            padding: 1.5rem 0;
+        }
+
+        .price-list-item:hover {
+            background-color: rgba(255, 193, 7, 0.05);
+            padding-left: 10px;
+            border-bottom-color: #ffc107;
+        }
+
+        .category-header {
+            background: linear-gradient(90deg, #ffc107 0%, #ffdb70 100%);
+            color: #212529;
+            padding: 1rem 2rem;
+            border-radius: 50px 0 50px 0;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .price-tag {
+            font-size: 1.25rem;
+            color: #212529;
+            font-weight: 800;
+        }
+
+        .weight-info {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .category-scroll {
+            position: sticky;
+            top: 70px;
+            z-index: 100;
+            background: white;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 
@@ -25,7 +68,7 @@
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="assets/images/favicon.ico" alt="logo" height="40" class="me-2">
-                    Falusi Termék
+                    Falusi Termék Kft.
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
                     aria-controls="mainNav" aria-expanded="false">
@@ -36,6 +79,7 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Galéria</a></li>
                         <li class="nav-item"><a class="nav-link active" href="products.html">Termékek</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">Hírek</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Rólunk</a></li>
                     </ul>
                 </div>
@@ -44,41 +88,140 @@
     </header>
 
     <main>
-        <section class="py-5 bg-light">
-            <div class="container text-center" data-aos="fade-down">
-                <h1 class="display-4 fw-bold">Termékeink</h1>
-                <p class="lead">Friss, adalékmentes háztáji húsok és termékek közvetlenül a gazdaságból.</p>
+        <section class="py-5 bg-light text-center">
+            <div class="container" data-aos="fade-down">
+                <h1 class="display-4 fw-bold">Termékkínálat és Áraink</h1>
+                <p class="lead text-muted">A legfrissebb konyhakész baromfi húsok közvetlenül a gazdaságunkból.</p>
             </div>
         </section>
 
+        <!-- Kategória gyorsválasztó -->
+        <div class="category-scroll shadow-sm">
+            <div class="container d-flex justify-content-center gap-2 gap-md-4">
+                <a href="#feher" class="btn btn-outline-warning rounded-pill btn-sm px-3">Fehér Baromfi</a>
+                <a href="#voros" class="btn btn-outline-warning rounded-pill btn-sm px-3">Vörös Baromfi</a>
+                <a href="#kacsa" class="btn btn-outline-warning rounded-pill btn-sm px-3">Kacsa</a>
+            </div>
+        </div>
+
         <section class="container py-5">
-            <div class="row g-4 mb-5" data-aos="fade-up">
-                <div class="col-md-6">
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-text bg-white border-end-0 rounded-start-pill"><i
-                                class="bi bi-search"></i></span>
-                        <input id="searchInput" type="text" class="form-control border-start-0 rounded-end-pill"
-                            placeholder="Keresés név szerint...">
+
+            <!-- FEHÉR BAROMFI -->
+            <div id="feher" class="mb-5 pt-4" data-aos="fade-up">
+                <h3 class="category-header fw-bold">Fehér Baromfi</h3>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="price-list-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="fw-bold mb-1">Fehér csirke</h5>
+                                <p class="weight-info mb-0">Súly: 1.0 - 1.5 kg között</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="price-tag">2 100 Ft <small class="text-muted fw-normal">/ kg</small></span>
+                            </div>
+                        </div>
+                        <div class="price-list-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="fw-bold mb-1">Fehér csirke</h5>
+                                <p class="weight-info mb-0">Súly: 1.5 - 3.0 kg között</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="price-tag">1 800 Ft <small class="text-muted fw-normal">/ kg</small></span>
+                            </div>
+                        </div>
+                        <div class="price-list-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="fw-bold mb-1">Fehér jérce</h5>
+                                <p class="weight-info mb-0">3.0 - 4.0 kg között</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="price-tag">1 800 Ft <small class="text-muted fw-normal">/ kg</small></span>
+                            </div>
+                        </div>
+                        <div class="price-list-item d-flex justify-content-between align-items-center border-0">
+                            <div>
+                                <h5 class="fw-bold mb-1">Fehér kakas</h5>
+                                <p class="weight-info mb-0">Ideális levesekhez, 3.0 - 4.0 kg között</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="price-tag">1 800 Ft <small class="text-muted fw-normal">/ kg</small></span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <select id="categorySelect" class="form-select form-select-lg rounded-pill px-4">
-                        <option value="">Összes kategória</option>
-                        <option value="fehér">Fehér baromfi</option>
-                        <option value="vörös">Vörös baromfi</option>
-                        <option value="kacsa">Kacsa termékek</option>
-                    </select>
                 </div>
             </div>
 
-            <div id="productContainer" class="row g-4">
-                <!-- Products dynamically loaded from assets/scripts/main.js -->
-                <div class="col-12 text-center py-5">
-                    <div class="spinner-border text-primary" role="status">
-                        <span class="visually-hidden">Betöltés...</span>
+            <!-- VÖRÖS BAROMFI -->
+            <div id="voros" class="mb-5 pt-5" data-aos="fade-up">
+                <h3 class="category-header fw-bold">Vörös Baromfi</h3>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="price-list-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="fw-bold mb-1">Vörös csirke</h5>
+                                <p class="weight-info mb-0">Lassú nevelés, 1.0 - 1.5 kg között</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="price-tag">2 500 Ft <small class="text-muted fw-normal">/ kg</small></span>
+                            </div>
+                        </div>
+                        <div class="price-list-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="fw-bold mb-1">Vörös csirke</h5>
+                                <p class="weight-info mb-0">Lassú nevelés, 1.5 - 3.0 kg között</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="price-tag">2 200 Ft <small class="text-muted fw-normal">/ kg</small></span>
+                            </div>
+                        </div>
+                        <div class="price-list-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="fw-bold mb-1">Vörös jérce</h5>
+                                <p class="weight-info mb-0">Hagyományos falusi minőség, 2.5 - 3.5 kg</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="price-tag">2 200 Ft <small class="text-muted fw-normal">/ kg</small></span>
+                            </div>
+                        </div>
+                        <div class="price-list-item d-flex justify-content-between align-items-center border-0">
+                            <div>
+                                <h5 class="fw-bold mb-1">Vörös kakas</h5>
+                                <p class="weight-info mb-0">Konyhakész vörös kakas, 3.0 - 4.0 kg</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="price-tag">2 200 Ft <small class="text-muted fw-normal">/ kg</small></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- KACSA -->
+            <div id="kacsa" class="mb-5 pt-5" data-aos="fade-up">
+                <h3 class="category-header fw-bold">Kacsa</h3>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="price-list-item d-flex justify-content-between align-items-center border-0">
+                            <div>
+                                <h5 class="fw-bold mb-1">Tömött kacsa (Májjal együtt)</h5>
+                                <p class="weight-info mb-0">Prémium minőség, 4.5 - 6.5 kg között</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="price-tag">3 300 Ft <small class="text-muted fw-normal">/ kg</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 pt-5">
+                <div class="card bg-warning bg-opacity-10 border-0 p-5 rounded-5">
+                    <h4 class="fw-bold mb-3">Vásárlási információk</h4>
+                    <p class="mb-4">Minden termékünk konyhakész, előhűtött állapotban érkezik.</p>
+                    <p class="h5 fw-bold mb-0">📞 Rendelésfelvétel: +36 20 214 8570</p>
+                </div>
+            </div>
+
         </section>
     </main>
 
@@ -89,12 +232,18 @@
                 <h3 class="fw-bold">Falusi Termék Kft</h3>
                 <p>Családi gazdaságunk büszkeségei közvetlenül az Ön asztalára.</p>
             </div>
-            <div class="row justify-content-center mb-4">
+            <div class="row justify-content-center mb-4 g-4">
                 <div class="col-auto">📞 +36 20 214 8570</div>
-                <div class="col-auto">📍 Tengelic, Komló utca</div>
+                <div class="col-auto">📍 Tengelic</div>
+                <div class="col-auto">
+                    <a href="https://www.facebook.com/p/Falusi-Term%C3%A9k-%C3%81llatteny%C3%A9szt%C5%91-Kereskedelmi-%C3%A9s-Szolg%C3%A1ltat%C3%B3-Kft-100068120409514/"
+                        class="text-white text-decoration-none" target="_blank">
+                        🔵 Facebook-oldalunk
+                    </a>
+                </div>
             </div>
             <div class="border-top border-secondary pt-4 mt-4 opacity-50">
-                <p>&copy; 2024 Falusi Termék Kft. Minden jog fenntartva.</p>
+                <p>&copy; 2026 Falusi Termék Kft. Minden jog fenntartva.</p>
             </div>
         </div>
     </footer>
@@ -103,8 +252,26 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 800, once: true });
+
+        // Sima görgetés a kategóriákhoz
+        document.querySelectorAll('.category-scroll a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const element = document.querySelector(targetId);
+                const offset = 130;
+                const bodyRect = document.body.getBoundingClientRect().top;
+                const elementRect = element.getBoundingClientRect().top;
+                const elementPosition = elementRect - bodyRect;
+                const offsetPosition = elementPosition - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
-    <script type="module" src="assets/scripts/main.js"></script>
 </body>
 
 </html>

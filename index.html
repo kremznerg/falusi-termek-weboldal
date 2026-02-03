@@ -21,12 +21,17 @@
 </head>
 
 <body>
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v19.0"></script>
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="assets/images/favicon.ico" alt="logo" height="40" class="me-2" />
-                    Falusi Termék
+                    Falusi Termék Kft.
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
                     aria-controls="mainNav" aria-expanded="false">
@@ -37,6 +42,7 @@
                         <li class="nav-item"><a class="nav-link active" href="index.html">Főoldal</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Galéria</a></li>
                         <li class="nav-item"><a class="nav-link" href="products.html">Termékek</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">Hírek</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Rólunk</a></li>
                     </ul>
                 </div>
@@ -50,7 +56,8 @@
             <p class="lead mb-4">Gyógyszermentes, saját takarmányon nevelt, lassú növekedésű prémium baromfi hús.</p>
             <div class="d-flex justify-content-center gap-3">
                 <a href="products.html" class="btn btn-warning btn-lg">Kínálatunk</a>
-                <a href="about.html" class="btn btn-outline-light btn-lg rounded-pill" style="border-width: 2px;">Ismerj
+                <a href="about.html" class="btn btn-outline-light btn-lg rounded-pill"
+                    style="border-width: 2px;">Ismerjen
                     meg minket</a>
             </div>
         </div>
@@ -64,23 +71,25 @@
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="card h-100 p-4">
                             <div class="mb-3 text-primary" style="font-size: 2rem;">🌿</div>
-                            <h4 class="fw-bold">100% Természetes</h4>
-                            <p class="text-muted">Gyógyszer- és antibiotikum-mentes tartás, ahogy dédszüleink csinálták.
-                            </p>
+                            <h4 class="fw-bold">Garantáltan Gyógyszermentes</h4>
+                            <p class="text-muted">Nálunk az állomány egyáltalán nem kap gyógyszert, saját receptúra
+                                alapján helyben darált gabonát esznek.</p>
                         </div>
                     </div>
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="card h-100 p-4">
-                            <div class="mb-3 text-primary" style="font-size: 2rem;">📦</div>
-                            <h4 class="fw-bold">Előrendelés</h4>
-                            <p class="text-muted">Garantált frissesség: csak akkor vágjuk le, ha Ön megrendelte.</p>
+                            <div class="mb-3 text-primary" style="font-size: 2rem;">⏳</div>
+                            <h4 class="fw-bold">Lassú Nevelés</h4>
+                            <p class="text-muted">A tömegtermeléssel szemben mi kivárjuk a 8-10 hetes növekedési időt,
+                                ami jobb minőséget eredményez.</p>
                         </div>
                     </div>
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="card h-100 p-4">
                             <div class="mb-3 text-primary" style="font-size: 2rem;">🚚</div>
                             <h4 class="fw-bold">Házhozszállítás</h4>
-                            <p class="text-muted">Budapest, Kaposvár, Pécs és környékein rendszeres kiszállítás.</p>
+                            <p class="text-muted">Budapest, Székesfehérvár, Pécs és Tengelic 150 km-es vonzáskörzetében
+                                kínálunk szállítást.</p>
                         </div>
                     </div>
                 </div>
@@ -96,7 +105,8 @@
                             <img src="assets/images/feher_csirke.jpg" class="card-img-top" alt="Fehér csirke" />
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Klasszikus Fehér Csirke</h5>
-                                <p class="card-text text-muted">A legnépszerűbb választás: puha hús, aranybarna bőr.</p>
+                                <p class="card-text text-muted">A legnépszerűbb választás: friss, konyhakész háztáji
+                                    baromfi.</p>
                                 <a href="products.html" class="btn btn-warning">Részletek</a>
                             </div>
                         </div>
@@ -106,7 +116,7 @@
                             <img src="assets/images/voros_csirke.jpg" class="card-img-top" alt="Vörös csirke" />
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Vörös Tanyasi Csirke</h5>
-                                <p class="card-text text-muted">Kiemelkedő ízvilág, kicsit tömörebb, zamatosabb hús.</p>
+                                <p class="card-text text-muted">Kiemelkedő, hagyományos ízvilág, falusi minőség.</p>
                                 <a href="products.html" class="btn btn-warning">Részletek</a>
                             </div>
                         </div>
@@ -116,7 +126,8 @@
                             <img src="assets/images/tomott_kacsa.jpg" class="card-img-top" alt="Tömött kacsa" />
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Prémium Tömött Kacsa</h5>
-                                <p class="card-text text-muted">Hatalmas májjal, 4-6 kg közötti szaftos minőség.</p>
+                                <p class="card-text text-muted">Májjal együtt, 4-6 kg közötti súlyban, prémium minőség.
+                                </p>
                                 <a href="products.html" class="btn btn-warning">Részletek</a>
                             </div>
                         </div>
@@ -126,6 +137,18 @@
         </section>
 
 
+        <section class="py-5 bg-warning bg-opacity-10">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <h2 class="fw-bold mb-4">Ne maradjon le a legújabb ajánlatokról!</h2>
+                        <a href="news.html" class="btn btn-warning btn-lg px-5 py-3 rounded-pill shadow-sm fw-bold">
+                            Minden friss hír megtekintése
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="text-white text-center">
@@ -135,12 +158,19 @@
                 <h3 class="fw-bold">Falusi Termék Kft</h3>
                 <p>Családi gazdaságunk büszkeségei közvetlenül az Ön asztalára.</p>
             </div>
-            <div class="row justify-content-center mb-4">
+            <div class="row justify-content-center mb-4 g-4">
                 <div class="col-auto">📞 +36 20 214 8570</div>
-                <div class="col-auto">📍 Tengelic, Komló utca</div>
+                <div class="col-auto">📍 Tengelic</div>
+                <div class="col-auto">
+                    <a href="https://www.facebook.com/p/Falusi-Term%C3%A9k-%C3%81llatteny%C3%A9szt%C5%91-Kereskedelmi-%C3%A9s-Szolg%C3%A1ltat%C3%B3-Kft-100068120409514/"
+                        class="text-white text-decoration-none" target="_blank">
+                        <!-- Simple FB Icon placeholder/text if no FontAwesome, or just FB text -->
+                        🔵 Facebook-oldalunk
+                    </a>
+                </div>
             </div>
             <div class="border-top border-secondary pt-4 mt-4 opacity-50">
-                <p>&copy; 2024 Falusi Termék Kft. Minden jog fenntartva.</p>
+                <p>&copy; 2026 Falusi Termék Kft. Minden jog fenntartva.</p>
             </div>
         </div>
     </footer>
