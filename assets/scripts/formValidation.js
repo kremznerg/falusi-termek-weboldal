@@ -58,7 +58,7 @@ form.addEventListener("submit", async function (e) {
                 alertBox.innerHTML = `
                     <div class="alert alert-success fade show border-0 rounded-4 shadow-sm">
                         <h5 class="fw-bold">Köszönjük!</h5>
-                        <p class="mb-0">Az üzenetét sikeresen továbbítottuk a kremznerg@gmail.com címre. Hamarosan válaszolunk!</p>
+                        <p class="mb-0">Az üzenetét sikeresen továbbítottuk az info@falusitermek.hu címre. Hamarosan válaszolunk!</p>
                     </div>
                 `;
                 form.reset();
