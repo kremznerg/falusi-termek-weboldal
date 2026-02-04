@@ -2,7 +2,8 @@
 
 Ez a projekt a tengelici **Falusi Termék Kft.** családi gazdaság hivatalos weboldala. A weboldal célja a háztáji, prémium minőségű baromfitermékek bemutatása, a gazdaság értékeinek közvetítése és a vásárlók tájékoztatása a rendelési lehetőségekről.
 
-falusitermek.hu
+[falusitermek.hu
+](https://falusitermek.hu/)
 
 ## Főbb jellemzők
 
